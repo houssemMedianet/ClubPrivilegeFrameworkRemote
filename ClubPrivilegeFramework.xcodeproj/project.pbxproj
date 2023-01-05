@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A6002602966D3EE000C74EA /* testFileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A60025F2966D3EE000C74EA /* testFileController.swift */; };
 		5AC33CC529647EEF003E0606 /* ClubPrivilegeFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = 5AC33CC429647EEF003E0606 /* ClubPrivilegeFramework.docc */; };
 		5AC33CC629647EEF003E0606 /* ClubPrivilegeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC33CC329647EEF003E0606 /* ClubPrivilegeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80B2B878692D0264375C1233 /* Pods_ClubPrivilegeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035D7E555D853977EDF6FAB1 /* Pods_ClubPrivilegeFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		035D7E555D853977EDF6FAB1 /* Pods_ClubPrivilegeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClubPrivilegeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35826FB14CC379D7331F5F09 /* Pods-ClubPrivilegeFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClubPrivilegeFramework.release.xcconfig"; path = "Target Support Files/Pods-ClubPrivilegeFramework/Pods-ClubPrivilegeFramework.release.xcconfig"; sourceTree = "<group>"; };
+		5A60025F2966D3EE000C74EA /* testFileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testFileController.swift; sourceTree = "<group>"; };
 		5AC33CC029647EEF003E0606 /* ClubPrivilegeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ClubPrivilegeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC33CC329647EEF003E0606 /* ClubPrivilegeFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubPrivilegeFramework.h; sourceTree = "<group>"; };
 		5AC33CC429647EEF003E0606 /* ClubPrivilegeFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ClubPrivilegeFramework.docc; sourceTree = "<group>"; };
+		67C6A724CB89E28EA6A6915C /* Pods-ClubPrivilegeFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClubPrivilegeFramework.debug.xcconfig"; path = "Target Support Files/Pods-ClubPrivilegeFramework/Pods-ClubPrivilegeFramework.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,17 +28,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80B2B878692D0264375C1233 /* Pods_ClubPrivilegeFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16B38812984A098B528BD7DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67C6A724CB89E28EA6A6915C /* Pods-ClubPrivilegeFramework.debug.xcconfig */,
+				35826FB14CC379D7331F5F09 /* Pods-ClubPrivilegeFramework.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5AC33CB629647EEF003E0606 = {
 			isa = PBXGroup;
 			children = (
 				5AC33CC229647EEF003E0606 /* ClubPrivilegeFramework */,
 				5AC33CC129647EEF003E0606 /* Products */,
+				16B38812984A098B528BD7DA /* Pods */,
+				DF8E3043388FA14653F8CB42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,10 +66,19 @@
 		5AC33CC229647EEF003E0606 /* ClubPrivilegeFramework */ = {
 			isa = PBXGroup;
 			children = (
+				5A60025F2966D3EE000C74EA /* testFileController.swift */,
 				5AC33CC329647EEF003E0606 /* ClubPrivilegeFramework.h */,
 				5AC33CC429647EEF003E0606 /* ClubPrivilegeFramework.docc */,
 			);
 			path = ClubPrivilegeFramework;
+			sourceTree = "<group>";
+		};
+		DF8E3043388FA14653F8CB42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				035D7E555D853977EDF6FAB1 /* Pods_ClubPrivilegeFramework.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AC33CC929647EEF003E0606 /* Build configuration list for PBXNativeTarget "ClubPrivilegeFramework" */;
 			buildPhases = (
+				61D9A9226F1558461CA0ED9B /* [CP] Check Pods Manifest.lock */,
 				5AC33CBB29647EEF003E0606 /* Headers */,
 				5AC33CBC29647EEF003E0606 /* Sources */,
 				5AC33CBD29647EEF003E0606 /* Frameworks */,
@@ -127,12 +156,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		61D9A9226F1558461CA0ED9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClubPrivilegeFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5AC33CBC29647EEF003E0606 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5AC33CC529647EEF003E0606 /* ClubPrivilegeFramework.docc in Sources */,
+				5A6002602966D3EE000C74EA /* testFileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +316,7 @@
 		};
 		5AC33CCA29647EEF003E0606 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67C6A724CB89E28EA6A6915C /* Pods-ClubPrivilegeFramework.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -290,6 +346,7 @@
 		};
 		5AC33CCB29647EEF003E0606 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35826FB14CC379D7331F5F09 /* Pods-ClubPrivilegeFramework.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
